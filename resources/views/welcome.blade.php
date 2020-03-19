@@ -12,7 +12,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                /* background-color: black; */
+                background-color: black;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -25,6 +25,8 @@
             html{
                 height: 100%;
                 background-image: url('storage/images/rocket1.jpg');
+                background-repeat:no-repeat;
+                background-size:cover;
             }
 
             /* .full-height {
@@ -68,6 +70,52 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .btn-primary:hover{
+                /*background-color: gold;*/
+                /*position: absolute;*/
+                top: calc(50% - 150px);
+                left: calc(50% - 150px);
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 1px solid white;
+                box-shadow:
+                    inset 0 0 50px #fff,      /* inner white */
+                        inset 20px 0 80px #ffed94,   /* inner left  */
+                        inset -20px 0 80px #7992c9,  /* inner right  */
+                        inset 20px 0 300px #ffed94,  /* inner left  */
+                        inset -20px 0 300px #7992c9, /* inner right  */
+                        0 0 50px #fff,            /* outer white */
+                        -10px 0 80px #f0f,        /* outer left magenta */
+                        10px 0 80px #fff;         /* outer right cyan */
+                }
+
+                .btn-primary{
+                border: 1px solid white;
+                }
+
+                /* Cloud */
+
+                hr{
+                    border: 0;
+                    height: 0; /* Firefox... */
+                    box-shadow: 0 0 10px 1px white;
+                    width: 200px;
+                }
+                hr:after {  /* Not really supposed to work, but does */
+                    content: "\00a0";  /* Prevent margin collapse */
+                }
+
+                .ball{
+                padding-top: 30%;
+                }
+
+                .jumbotron{
+                text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                            0px 4px 3px rgba(0,0,0,0.1),
+                            0px 4px 3px rgba(0,0,0,0.1);
+                }
         </style>
     </head>
     <body>
@@ -90,10 +138,16 @@
 
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="jumbotron bg-transparent">
+                        <h1 class="display-4">Cześć mam na imię Bartosz</h1>
+                            <p class="lead">To jest moja strona Cv</p>
+                                <hr align="left">
+
+                                    <div class="ball">
+                                        <a class="btn btn-primary btn-lg" href="index2/index2.html" role="button" ><i class="far fa-hand-spock"></i> START!</a>
+                                    </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </body>
 </html>

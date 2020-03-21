@@ -242,7 +242,7 @@ fieldset:disabled a.btn {
                                 <hr align="left">
 
                                     <div class="ball">
-                                        <a class="btn btn-primary btn-lg" id="buton" href="index2/index2.html" role="button" ><i class="far fa-hand-spock"></i> START!</a>
+                                        <a class="btn btn-primary btn-lg" id="buton" href="home" role="button" ><i class="far fa-hand-spock"></i> START!</a>
                                     </div>
                     </div>
                 </div>
